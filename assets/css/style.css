@@ -1,0 +1,334 @@
+/* font-family: 'Righteous', cursive;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Lato', sans-serif;
+ */
+
+/* latin */
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'), url('../fonts/Lato-Regular.ttf') format('truetype');
+}
+
+/* latin */
+
+@font-face {
+    font-family: 'Permanent Marker';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Permanent Marker Regular'), local('PermanentMarker-Regular'), url('../fonts/PermanentMarker-Regular.ttf') format('truetype');
+}
+
+/* latin */
+
+@font-face {
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Righteous'), local('Righteous-Regular'), url('../fonts/Righteous-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f5f5f5;
+}
+
+.container {
+    display: flexbox;
+    align-content: center;
+    width: 100%;
+}
+
+h2 {
+    margin-bottom: 5%;
+}
+
+.brand {
+    font-family: 'Righteous', cursive;
+    text-transform: uppercase;
+}
+
+nav {
+    text-transform: uppercase;
+}
+
+.navbar {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 99;
+}
+
+.div-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-color: #f5f5f5;
+}
+
+.divcaja {
+    position: relative;
+    max-width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.22);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.publica {
+    border: 4px solid forestgreen;
+}
+
+.privada {
+    border: 4px solid tomato;
+}
+
+.caja-titulo {
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: #3b3b3b;
+}
+
+.caja-cuerpo {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 1rem auto;
+    cursor: pointer;
+}
+
+.pad {
+    width: 5rem;
+    height: 5rem;
+    margin: 0.3rem;
+    border: 1px solid #29B6F6;
+    background-color: #424242;
+    color: white;
+    font-size: 0.8;
+    transition: 0.5s ease;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.pad:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.pad:active {
+    transform: scale(1.50);
+    transition: 0.5s ease;
+    background-color: white;
+}
+
+h4 {
+    font-size: 1em;
+    text-align: center;
+    vertical-align: baseline;
+    font-family: 'Righteous', cursive;
+}
+
+.pad p {
+    font-size: 1em;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+}
+
+/* Estilo de la página verCajas */
+
+.container-cajas {
+    width: 35rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+}
+
+.cajaSencilla {
+    margin: 1em;
+    height: 8em;
+    width: 8em;
+    background-color: #424242;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    transition: 0.5s ease;
+    font-family: 'Righteous', cursive;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+    
+}
+
+.cajaSencilla:hover {
+    transform: scale(1.05);
+    transition: 0.5s ease;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cajaSencilla a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.form-caja, .form-caja-borrar, .form-audio, .form-audio-borrar {
+    margin: 2rem auto;
+    width: 15rem;
+}
+
+.form-alta, .form-login, .form-cuenta, .form-cuenta-borrar {
+    margin: 6rem auto;
+    width: 15rem;
+}
+
+.cuenta {
+    margin: 6rem auto;
+    width: 15rem;
+}
+
+.error {
+    color: red;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#mensaje {
+    color: blueviolet;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+    justify-content: center;
+}
+
+.fab:before {
+    font-family: FontAwesome;
+}
+
+.fab {
+    font-family: "FontAwesome";
+    font-size: 1.8rem !important;
+    padding: 1rem 0.5rem;
+    color: #656565;
+    text-decoration: none;
+}
+
+.fab:hover {
+    text-decoration: none;
+}
+
+.lorem {
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.lorem div {
+    margin: 1rem 5rem;
+}
+
+.lorem div p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+#licencia {
+    width: 88px;
+    height: 31px;
+    align-content: center;
+    margin: 1rem;
+}
+
+/* enlaces del footer */
+
+.enlaces {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.enlaces a {
+    padding: 1rem 0.5rem;
+}
+
+.container-cta {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cta {
+    font-family: 'Lato', sans-serif;
+}
+
+.cta-title {
+    font-family: 'Permanent Marker', cursive;
+}
+
+.cta div p {
+    font-size: 1.5rem;
+}
+
+.cta-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.cta button {
+    font-weight: bold;
+}
+
+#img-poke {
+    background-color: #f5f5f5;
+    width: 12rem;
+    height: 10rem;
+    border: none;
+}
+
+#borraCuenta {
+    margin-top: 1rem;
+}
+
+#altafrase {
+    margin-top: 1rem;
+}
